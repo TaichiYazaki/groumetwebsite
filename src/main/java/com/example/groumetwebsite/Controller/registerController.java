@@ -5,8 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/")
-public class registerController {
-    
+public class RegisterController {
+    /**
+     * 登録画面の表示
+     * @return
+     */
     @RequestMapping("/register")
     public String register(){
         return "register";
